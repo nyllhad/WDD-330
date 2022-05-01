@@ -1,1 +1,12 @@
+h1 {
+    padding: 5px;
+    font-size: larger;
+    color: crimson;
+    text-align: center;
+}
 
+.list {
+    display: grid;
+    grid-auto-columns: auto;
+    color: yellow;
+}
