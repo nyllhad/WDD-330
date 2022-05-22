@@ -23,3 +23,66 @@
 <script src='main.js'></script>
 </body>
 </html>
+
+<!-- Week 05 Notes:
+
+Stack Traces: 
+Exceptions create Stack Traces that, when followed back will reveale where the exception occurred.
+
+Warnings: 
+Warnings happen when there is an error in the code but is not serious enough to crash the program and cause a exception error. When a warning occurs, the HTML will still run but the JS will not.
+
+Ensure that when your code fails, it is obvious and "loud". 
+
+Strict Mode:
+Strict mode is more stringent when picking up on errors and warnings. Not using Strict Mode is considered "sloppy coding".
+'use strict' to use strict mode. 
+
+Linting Tools:
+Linting tools can be added to test the quality of one's code. JSLint, JSHint, and ES Lint are a few of these liniting tools that ared to help spot sloppy coding or syntax errors.
+
+Debugging:
+Debugging is the process of locating issues within your code and fix them so the code can run without issue. To help debug, you can use breakpoints within your code that will break the code into smaller chunks and to help determine where an error is occurring specifically. 
+console.log() is a great way to create a breakpoint to determine if the program is getting to specific points in the code. Console.log() will display within the browser's dev tools section. 
+
+Error Objects:
+Error Objects will say something when something goes wrong. For example: 
+const error = new Error();
+The brackets allow the programmer to add a custom error message. For example:
+const error = new Error('Oops, something went wrong');
+
+Other Error Objects and their uses:
+RangeError is thrown when a number is outside an allowable range of values.
+
+ReferenceError: is thrown when a reference is made to an item that doesn't exist. For example, calling a function that hasn't been defined.
+
+SyntaxError: is thrown when there's an error in the code's syntax.
+
+TypeError: is thrown when there's an error in the type of value used; for example, a string is used when a number is expected.
+
+URIError: is thrown when there's a problem encoding or decoding the URI.
+
+InternalError: is a non-standard error that is thrown when an error occurs in the JavaScript engine. A common cause of this too much recursion.
+
+Throwing Exceptions:
+A programmer can throw their own exceptions but using the "throw" statement. For example:
+throw 2;
+throw 'Up';
+throw { toys: 'out of pram' };
+
+However, is considered best-practice to throw an Error Object. It can then be used in a Catch block.
+
+Exception Handling:
+When an exception occurs, the program terminates with an error message. This is ideal in development as it allows us to identify and fix errors. In production, however, it will appear as if the program has crashed, which does not reflect well on a ninja programmer.
+Use try, catch, and finally. For example:
+function imaginarySquareRoot(number) {
+  'use strict';
+  try {
+      return String(squareRoot(number));
+  } catch(error) {
+      return squareRoot(-number)+'i';
+  }
+}
+
+Tests:
+Testing is a must for debugging and finding issues.  -->
