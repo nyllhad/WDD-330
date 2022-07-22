@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Expense Reporting</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h2>Expense Tracker</h2>
+  <div class="container">
+    <h4>Your Balance</h4>
+    <h1 id="balance">$0.00</h1>
+    <div class="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money plus">+$0.00</p>
+      </div>
+      <div>
+        <h4>Expenses</h4>
+        <p id="money-minus" class="money minus">-$0.00</p>
+      </div>
+    </div>
+    <h3>Add Transaction</h3>
+    <form action="" id="form">
+      <div class="form-control">
+        <label for="text">Name</label>
+        <input type="text" id="text" placeholder="Name of transaction..." />
+      </div>
+      <div class="form-control">
+        <label for="amount">Amount <br /><br />Please include:<br />+ Income <br />- Expenses</label>
+        <input type="number" id="amount" placeholder="Amount of expense" />
+        <button class="btn">Add transation</button>
+      </div>
+      <h3>List of Transactions</h3>
+      <ul id="list" class="list">
+      </ul>
+    </form>
+  </div>
+  <button type="button" onclick="clearStorage()">Clear</button>
+  <script src="script.js" async defer></script>
+</body>
+
+</html>
